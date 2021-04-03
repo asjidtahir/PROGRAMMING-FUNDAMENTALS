@@ -1,0 +1,20 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+int main()
+{
+	ifstream a;
+	a.open("input.txt");
+	int counter = 0;
+	string word;
+	while (!a.eof())
+	{
+		if (getline(a, word = "Pakistan"))
+		{
+			counter++;
+		}
+	}
+	cout << counter << endl;
+	return 0;
+}

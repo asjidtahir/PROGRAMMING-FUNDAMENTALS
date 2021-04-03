@@ -1,0 +1,13 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+	int f,g;
+ifstream in;
+in.open("data.txt");
+in>>f>>g;
+cout<<f+g;
+system("pause");
+return 0;
+}

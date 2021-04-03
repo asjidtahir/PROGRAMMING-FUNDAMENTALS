@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int id[5]={1101,1102,1103,1104,1105};
+	for (int i=0;i<5;i++)
+	{
+		cout<<id[i]<<"";
+	}
+	system("pause");
+	return 0;
+}

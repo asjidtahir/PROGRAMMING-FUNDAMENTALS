@@ -1,0 +1,21 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,sum;
+	float mean,median,mode,std_deviation,variance;
+	cout<<"Enter your number:"<<endl;
+	cin>>num1>>num2>>num3>>num4>>num5>>num6>>num7>>num8>>num9;
+	sum=num1+num2+num3+num4+num5+num6+num7+num8+num9+num10;
+	mean=sum/10;
+	cout<<"Mean of 10 numbers is:"<<mean<<endl;
+	variance=(num1-mean)+(num2-mean)+(num3-mean)+(num4-mean)+(num5-mean)+(num6-mean)+(num7-mean)+(num8-mean)+(num9-mean)+(num10-mean)/10;
+	cout<<"Variance of 10 numbers is:"<<variance<<endl;
+	std_deviation=sqrt(variance);
+	cout<<"Standard deviation of 10 numbers is :"<<std_deviation<<endl;
+	median=(num5+num6)/2;
+	cout<<"Median of 10 numbers is :"<<median<<endl;
+	system ("pause");
+	return 0;
+}

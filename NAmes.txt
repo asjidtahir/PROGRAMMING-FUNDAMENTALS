@@ -1,0 +1,18 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void myfunction (string lname)
+{
+	cout<<lname<<"Ajji"<<endl;
+}
+
+int main ()
+{
+	myfunction("hassan");
+	myfunction("ibrar");
+	myfunction("nomi");
+	myfunction("subhani");
+	myfunction("Shery");
+	system ("pause");
+
+}

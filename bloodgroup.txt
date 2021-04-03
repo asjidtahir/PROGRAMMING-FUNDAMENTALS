@@ -1,0 +1,25 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+int main()
+{
+	string Fname, Lname,bloodgroup,input;
+	int numbers;
+	ifstream infile;
+	infile.open("numbers.txt");
+	cout<<"what do you want to choose:"<<endl;
+	cin>>input;
+	while (infile>>Fname)
+	{
+		infile>>Lname;
+		infile>>bloodgroup;
+		infile>>numbers;
+		if (input==bloodgroup)
+		{
+			cout<<Fname<<""<<Lname<<""<<numbers<<endl;
+		}
+	}
+	system("pause");
+	return 0;
+}
