@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void abc ()
+{
+	int a=10;// Automatic local variable
+	static int b=20;// static local variable
+	a++;
+	b++;
+	cout<<"a =  "<<a<<"    "<<"b =   "<<b<<endl;
+}
+    void main()
+	{
+		abc ();
+		abc();
+		abc();
+		abc();
+	system ("pause");
+}

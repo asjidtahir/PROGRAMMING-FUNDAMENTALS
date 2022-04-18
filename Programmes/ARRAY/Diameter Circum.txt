@@ -1,0 +1,36 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+double distance(double x_1,double y_1,double x_2,double y_2)
+{
+	return sqrt((pow((x_2-x_1),2)+pow((y_2-y_1),2)));
+}
+double radius(double x_1,double y_1,double x_2,double y_2)
+{
+	double radius;
+	return radius=distance(x_1,x_2,y_1,y_2);
+}
+double circumference(double radius)
+{
+	return 2*3.1417*radius;
+}
+double area (double radius)
+{
+	return 3.1417*radius*radius;
+}
+int main()
+{
+	double radius,x_1,y_1,x_2,y_2;
+	cout<<"Enter the value of x and y for calculating the given distance:"<<endl;
+	cin>>x_1;
+	cin>>y_1;
+	cin>>x_2;
+	cin>>y_2;
+	radius=distance(x_1,x_2,y_1,y_2);
+	cout<<"The radius of the given circle is :"<<radius<<endl;
+	cout<<"The circumference of the given circle is :"<<circumference(radius)<<endl;
+	cout<<"The Area of the give circle is :"<<area(radius)<<endl;
+	cout<<"The diameter of the circle is :"<<2*radius<<endl;
+	system ("pause");
+}

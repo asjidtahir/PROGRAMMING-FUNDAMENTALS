@@ -1,0 +1,14 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int myfunction (int x , int y )
+{
+	cout<<x-y<<endl;
+
+}
+
+int main ()
+{
+	myfunction(3,4);
+	system ("pause");
+}

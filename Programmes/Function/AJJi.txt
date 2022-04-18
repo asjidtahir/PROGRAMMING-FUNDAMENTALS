@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+void myfunction ()
+{
+	cout<<" I am AJJI !!:"<<endl;
+}
+
+int main ()
+{
+	myfunction();
+	system ("pause");
+
+}

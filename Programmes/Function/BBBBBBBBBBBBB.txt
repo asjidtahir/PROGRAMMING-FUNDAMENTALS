@@ -1,0 +1,125 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+int ascending(int num1,int num2,int num3)
+{
+	cout<<"Enter the value of 1st num:"<<endl;
+	cin>>num1;
+	cout<<"Enter the value of 2nd num:"<<endl;
+	cin>>num2;
+	cout<<"Enter the value of 3rd num:"<<endl;
+	cin>>num3;
+	if (num1<num2<num3)
+	{
+		cout<<num1<<num2<<num3<<endl;
+	}
+	else 
+	{
+		cout<<"nothing!!!!:"<<endl;
+	}
+}
+
+int main()
+{
+	ascending(1,2,3);
+	return 0;
+}
+
+
+
+
+
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+double series;
+int i=1,a,n,g=s=0;
+cout<<"input the series numbers:"<<endl;
+cin>>a;
+for ( int i=1;i<=n;i++)
+{
+	
+g=a/c;
+}
+cout<<"the sum of the series is :"<<series<<endl;
+return series;
+}
+
+int main()
+{
+	series (1,2,3,4,5);
+	return 0;
+}
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+double series;
+int i=1,a,n,g=s=0;
+cout<<"input the series numbers:"<<endl;
+cin>>a;
+for ( int i=1;i<=n;i++)
+{
+	
+g=a/c;
+}
+cout<<"the sum of the series is :"<<series<<endl;
+return series;
+}
+
+int main()
+{
+	series (1,2,3,4,5);
+	return 0;
+}
+
+
+
+
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+{
+
+int i, x,y,z,a,sum=0;
+
+cout<<"Enter numbers for the checking of whether it is perfect square or not:"<<endl;
+cin>>a;
+for ( int i=1;i<=a,i++)
+
+{
+	if (y%i=0)
+	{
+		cout<<"it is perfect square:"<<a<<endl;
+		sum=x+y+z;
+	}
+	else  (!y%i=0)
+	{
+		cout<<"it isn't a perfect sqaure :"<<a<<endl;
+		sum=x+y+z;
+	}	
+}
+int main()
+{
+	perfect square();
+	system ("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

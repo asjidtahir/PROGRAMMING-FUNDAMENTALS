@@ -1,0 +1,15 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	int id[5]={1101,1102,1103,1104,1105};
+	string names[5]={"Ajjji","ibrar","shery","subhani","Affan"};
+	for (int i=0;i<5;i++)
+	{
+		cout<<id[i]<<"  "<<names[i]<<" "<<endl;
+	}
+	
+	system("pause");
+	return 0;
+}

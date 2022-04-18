@@ -1,0 +1,24 @@
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+	ifstream x,y;
+	x.open("sold_tickets.txt");
+	y.open("price.txt");
+	int sold_tickets,totalsaleamount,prize;
+	int sum=0,n=0;
+	while(y>>prize)
+	{
+		x>>sold_tickets;
+		totalsaleamount=prize*sold_tickets;
+		sum=sum+totalsaleamount;
+		n=n+sold_tickets;
+	
+	}
+	cout<<"total sold tickets is $:"<<n<<endl;
+	cout<<"the sum of all total sale amount is $ :"<<sum<<endl;
+		
+	system ("pause");
+	return 0;
+}

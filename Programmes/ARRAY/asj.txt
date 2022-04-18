@@ -1,0 +1,49 @@
+#include <iostream> 
+#include <stdlib.h>
+#include<string>
+using namespace std;
+int main()
+{
+	int n=10;
+	int ans1 = 0;
+	int ans2 = 0;
+	
+	int money[20] ;
+		int a1[10] ;
+		int a2[10] ;
+		for (int i = 0; i < 20; i++)
+		{
+			money[i] = rand() % 10;
+			
+		}
+		for (int i = 0; i < 10; i++)
+		{
+			a1[i] = money[i];
+			a2[i] = money[i + 1];
+		}
+		for (int i = 0; i < 10; i++)
+		{
+			cout << a1[i] << endl;
+			cout << a2[i] <<endl;
+		}
+		for (int i = 0; i < 10; i++)
+		{
+			ans1 += a1[i];
+			ans2 += a2[i];
+			
+		}
+		cout << "1st person points = " << ans1 << endl;
+		cout << "2nd person points = " << ans2 << endl;
+		
+		if (ans1>ans2)
+		{
+			cout << "1st person wins " << endl;
+		}
+		else
+		{
+			cout << "2nd person wins" << endl;
+		}
+
+	return 0;
+
+}

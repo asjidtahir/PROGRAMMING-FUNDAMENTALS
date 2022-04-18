@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int marks[5];
+	marks[0]=10;
+	marks[1]=50;
+	cin>>marks[2];
+    cout<<marks[0]*marks[1]+marks[2]<<endl;
+
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{
+	int x,y,z,a,b;
+	cout<<"Enter the value of a:"<<endl;
+	cin>>a;
+	cout<<"Enter the value of b:"<<endl;
+	cin>>b;
+	cout<<"Enter the value of x:"<<endl;
+	cin>>x;
+	cout<<"Enter the value of y:"<<endl;
+	cin>>y;
+	z=a+b-x*y;
+	cout<<"The value of z is :"<<z<<endl;
+	system("pause");
+	return 0;
+}
+
+
+

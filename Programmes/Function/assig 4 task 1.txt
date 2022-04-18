@@ -1,0 +1,71 @@
+#include<fstream>
+#include<string>
+#include<iostream>
+using namespace std;
+int x;
+void takenum()
+{
+    cout<<"Enter the following number:"<<endl;
+    cin>>x;
+}
+void Arrange()
+{
+    ofstream evenfile,oddfile,foofile;
+    evenfile.open("evenfile.txt");
+    oddfile.open("oddfile.txt");
+    foofile.open("evenoddfile.txt");
+    int i;
+    x=(x-1);
+    for (i=1;i<=x;i++)
+    {
+        if(i%2==0 && x%2==0)
+        {
+         evenfile<<i<<"\t"<<x<<endl;
+        }
+        if(i%2!=0 && x%2!=0)
+        {
+         oddfile<<i<<"\t"<<x<<endl;
+        }
+        if (i%2!=0 && x%2==0)
+        {
+         foofile<<i<<"\t"<<x<<endl;
+        }
+        if (i%2==0 && x%2!=0)
+        {
+         foofile<<i<<"\t"<<x<<endl;
+        }
+        x--;
+    }
+}
+void show_number()
+{
+    ifstream file1,file2,file3;
+    file1.open("evenfile.txt");
+    file2.open("oddfile.txt");
+    file3.open("evenoddfile.txt");
+    int i,a;
+    while(file1>>i>>x)
+    {
+        cout<<"Even.txt"<<endl;
+        cout<<i<<"\t"<<x<<endl;
+    }
+    while (file2>>i>>x)
+    {
+        cout<<"odd.txt"<<endl;
+        cout<<i<<"\t"<<x<<endl;
+    }
+    while (file3>>i>>x)
+    {
+        cout<<"EvenOdd.txt"<<endl;
+        cout<<i<<"\t"<<x<<endl;
+    }
+}
+int main()
+{
+    takenum();
+    Arrange();
+    show_number();
+	system("pause");
+    return 0;
+}
+
